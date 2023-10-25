@@ -13,7 +13,9 @@
   - [7. parachute system](#7-parachute-system)
   - [8. rocketscience and future builds](#8-rocketscience-and-future-builds)
 
-![rocket](photos/CAD1.jpg){width=150px height=150px}
+![rocket](photos/CAD1.jpg)
+![rocket](photos/CAD2.png)
+![rocket](photos/CAD3.png)
 
 <a name="overview"></a>
 ## 1. overview
@@ -48,13 +50,13 @@ This the mp-remote commands for the NodeMcu board:
 ## 2. water.rocket
 
 Part list:
-1. great
-2. flight controller case
-3. 4x small fins
-4. bottle base top
-5. empty water bottle (hard plasatic PET)
-6. bottle base button
-7. 4x big fins
+- great
+- flight controller case
+- 4x small fins
+- bottle base top
+- empty water bottle (hard plasatic PET)
+- bottle base button
+- 4x big fins
 
 Explosion view of the rocket:
 
@@ -70,6 +72,13 @@ Parts:
 - ADXL345
 - Servo
 
+![rocket](photos/flight-controller1.jpg)
+![rocket](photos/flight-controller2.jpg)
+![rocket](photos/flight-controller3.jpg)
+![rocket](photos/flight-controller4.jpg)
+![rocket](photos/flight-controller5.jpg)
+![rocket](photos/flight-controller6.jpg)
+
 Wiring-plan:
 
 
@@ -80,37 +89,45 @@ I coded the software in micropython. Main-programm is short (arround 20 lines), 
 The main function is the trigger for the parachute, when the ADXL345 is 0G, then the value go to arround -10. So i code the process, that at value 0 the servo go from 0° to 180°. The servo opens the door of the great and release the parachute over a spring mechanismus.
 Here is the LINK to the code.
 
+![rocket](photos/data-analyse1.png)
+
 <a name="rocket-base"></a>
 ## 5. rocket.base
 the rocket base is mixxed build from wood and 3d printing parts.
 For put the pressed air in the bottle, i use a bicycle wheel value and some sealing rings.
 The trigger is build from 3D printed, wrapping wiring and cable ties.
 Parts:
-4x support
-trigger ring on the top
-16x cables ties
-ring outside for holding the cable ties
-ring inside for holding the cable ties
-plug
-2x sealing rubber
-6x M5x50 screws
-12x washers
-6x M5 screw nuts
+- 4x support
+- trigger ring on the top
+- 16x cables ties
+- ring outside for holding the cable ties
+- ring inside for holding the cable ties
+- plug
+- 2x sealing rubber
+- 6x M5x50 screws
+- 12x washers
+- 6x M5 screw nuts
+
+![rocket](photos/rocket-base1.jpg)
+![rocket](photos/rocket-base2.jpg)
+![rocket](photos/rocket-base3.jpg)
+
 
 Explosion view of the rocket base:
 
 <a name="trigger-system"></a>
 ## 6. trigger system  
-here is a give of the trigger system
+here is the trigger system:
 from the top
 from the button
+![rocket](photos/trigger1.jpg)
 
 <a name="parachute-system"></a>
 ## 7. parachute system
 the parachute is made from a plastic film.
-Is important that the parachute is not much compact in the great. The parachute cord have to be oranisized in the great.
+Is important that the parachute is not much compact in the top. The parachute cord have to be oranisized in the top.
 
-In the great i use a piece of a second plastic bottle as jumping spring. The parachute pressed against the spring. The great door pressed against the parachute. The cord from the great holding the door and can be triggered from the servo.
+In the top i use a piece of a second plastic bottle as jumping spring. The parachute pressed against the spring. The great door pressed against the parachute. The cord from the top holding the door and can be triggered from the servo.
 
 here are some photos and animations.
 
@@ -119,8 +136,7 @@ here are some photos and animations.
 <a name="rocketscience-future"></a>
 ## 8. rocketscience and future builds  
 
-i want to talk about some informations about rockets:
-
-i ask myself some questions like:
+so - at the end we can think about some questions:
 what the economist way to shoot a rocket in sky?
 what simple options are avaible?
+how many different kind of rocket engines it haves?
