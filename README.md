@@ -36,13 +36,13 @@ The Water.Rocket is a 3D printed project. You will need:
 - plastic foil
 - Cord
 - superglue
-- cable ties
-**All together WITHOUT 3D printing, arround 40 $**
+- cable ties  
+> **All together WITHOUT 3D printing, arround 40 $**
 
-This the mp-remote commands for the NodeMcu board:  
-- this command upload the main.py to the micropython board over com6  
+This the mp-remote commands for the NodeMCU board:  
+- this windows console command upload the main.py to the micropython board over com6  
 `python.exe -m mpremote connect com6 cp main.py :`  
-- this command connects to the python prompt over com6  
+- this windows console command connects to the python prompt over com6  
 `python.exe -m mpremote connect com6`  
 
 <a name="Water.rocket"></a>
@@ -59,7 +59,7 @@ Part list:
 
 Explosion view of the rocket:
 
-so, the empty weight is 
+so, the empty weight is 336 gramm (with flight-controller and 18650 battery)
 
 <a name="flight-controller"></a>
 ## 3. flight controller
@@ -70,7 +70,7 @@ Parts:
 - neopixel LED
 - ADXL345
 - Servo
-- 
+
 Wiring-plan:
 
 ![wiring](photos_animations/wiring.jpg)  
@@ -83,8 +83,6 @@ Here are some photos from the finished controller:
 ![rocket](photos_animations/flight-controller4.jpg)  
 ![rocket](photos_animations/flight-controller5.jpg)  
 ![rocket](photos_animations/flight-controller6.jpg)  
-
-
 
 
 <a name="software-flight-control"></a>
