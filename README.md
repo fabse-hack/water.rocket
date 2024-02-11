@@ -1,8 +1,8 @@
 # Neptune 1 - is a Water.Rocket 3D printed and written in Micropython  
 ## -> uses inovated water fuel for eco-friendly space boosts
 ## Requirements specification:
-- [Neptune 1 - is a Water.Rocket 3D printed and written in Micropython](#neptune-1---is-a-waterrocket-3d-printed-and-written-in-micropython)
-  - [-\> uses inovated water fuel for eco-friendly space boosts](#--uses-inovated-water-fuel-for-eco-friendly-space-boosts)
+- [Neptune 1 - is a Water.Rocket 3D printed and written in Micropython](#neptune-1---is-a-waterrocket-3d-printed-and-written-in-micropython)  
+   uses inovated water fuel for eco-friendly space boosts
   - [Requirements specification:](#requirements-specification)
   - [1. overview](#1-overview)
   - [2. water.rocket](#2-waterrocket)
@@ -13,9 +13,8 @@
   - [7. parachute system](#7-parachute-system)
   - [8. rocketscience and future builds](#8-rocketscience-and-future-builds)
 
-![rocket](photos/CAD1.jpg)
-![rocket](photos/CAD2.png)
-![rocket](photos/CAD3.png)
+![rocket](photos & animations/complete_rocket.jpg)
+![rocket](photos & animations/CAD1.jpg)
 
 <a name="overview"></a>
 ## 1. overview
@@ -71,15 +70,21 @@ Parts:
 - neopixel LED
 - ADXL345
 - Servo
-
-![rocket](photos/flight-controller1.jpg)
-![rocket](photos/flight-controller2.jpg)
-![rocket](photos/flight-controller3.jpg)
-![rocket](photos/flight-controller4.jpg)
-![rocket](photos/flight-controller5.jpg)
-![rocket](photos/flight-controller6.jpg)
-
+- 
 Wiring-plan:
+
+![wiring](photos & animations/wiring.jpg)  
+
+Here are some photos from the finished controller:
+
+![rocket](photos & animations/flight-controller1.jpg)  
+![rocket](photos & animations/flight-controller2.jpg)  
+![rocket](photos & animations/flight-controller3.jpg)  
+![rocket](photos & animations/flight-controller4.jpg)  
+![rocket](photos & animations/flight-controller5.jpg)  
+![rocket](photos & animations/flight-controller6.jpg)  
+
+
 
 
 <a name="software-flight-control"></a>
@@ -108,9 +113,9 @@ Parts:
 - 12x washers
 - 6x M5 screw nuts
 
-![rocket](photos/rocket-base1.jpg)
-![rocket](photos/rocket-base2.jpg)
-![rocket](photos/rocket-base3.jpg)
+![rocket](photos & animations/rocket-base1.jpg)
+![rocket](photos & animations/rocket-base2.jpg)
+![rocket](photos & animations/rocket-base3.jpg)
 
 
 Explosion view of the rocket base:
@@ -120,7 +125,9 @@ Explosion view of the rocket base:
 here is the trigger system:
 from the top
 from the button
-![rocket](photos/trigger1.jpg)
+![rocket](photos & animations/trigger1.jpg)
+![rocket](photos & animations/CAD2.png)
+![rocket](photos & animations/CAD3.png)
 
 <a name="parachute-system"></a>
 ## 7. parachute system
@@ -129,8 +136,9 @@ Is important that the parachute is not much compact in the top. The parachute co
 
 In the top i use a piece of a second plastic bottle as jumping spring. The parachute pressed against the spring. The great door pressed against the parachute. The cord from the top holding the door and can be triggered from the servo.
 
-here are some photos and animations.
+here are some photos and animations:
 
+![parachute](photos & animations/rocket_parachute1_slow.gif)
 
 
 <a name="rocketscience-future"></a>
