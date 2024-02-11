@@ -13,8 +13,8 @@
   - [7. parachute system](#7-parachute-system)
   - [8. rocketscience and future builds](#8-rocketscience-and-future-builds)
 
-![rocket](photos & animations/complete_rocket.jpg)
-![rocket](photos & animations/CAD1.jpg)
+![rocket](photos_animations/complete_rocket.jpg)
+![rocket](photos_animations/CAD1.jpg)
 
 <a name="overview"></a>
 ## 1. overview
@@ -73,16 +73,16 @@ Parts:
 - 
 Wiring-plan:
 
-![wiring](photos & animations/wiring.jpg)  
+![wiring](photos_animations/wiring.jpg)  
 
 Here are some photos from the finished controller:
 
-![rocket](photos & animations/flight-controller1.jpg)  
-![rocket](photos & animations/flight-controller2.jpg)  
-![rocket](photos & animations/flight-controller3.jpg)  
-![rocket](photos & animations/flight-controller4.jpg)  
-![rocket](photos & animations/flight-controller5.jpg)  
-![rocket](photos & animations/flight-controller6.jpg)  
+![rocket](photos_animations/flight-controller1.jpg)  
+![rocket](photos_animations/flight-controller2.jpg)  
+![rocket](photos_animations/flight-controller3.jpg)  
+![rocket](photos_animations/flight-controller4.jpg)  
+![rocket](photos_animations/flight-controller5.jpg)  
+![rocket](photos_animations/flight-controller6.jpg)  
 
 
 
@@ -94,7 +94,7 @@ I coded the software in micropython. Main-programm is short (arround 20 lines), 
 The main function is the trigger for the parachute, when the ADXL345 is 0G, then the value go to arround -10. So i code the process, that at value 0 the servo go from 0° to 180°. The servo opens the door of the great and release the parachute over a spring mechanismus.
 Here is the LINK to the code.
 
-![rocket](photos/data-analyse1.png)
+![rocket](photos_animations/data-analyse1.png)
 
 <a name="rocket-base"></a>
 ## 5. rocket.base
@@ -113,9 +113,9 @@ Parts:
 - 12x washers
 - 6x M5 screw nuts
 
-![rocket](photos & animations/rocket-base1.jpg)
-![rocket](photos & animations/rocket-base2.jpg)
-![rocket](photos & animations/rocket-base3.jpg)
+![rocket](photos_animations/rocket-base1.jpg)
+![rocket](photos_animations/rocket-base2.jpg)
+![rocket](photos_animations/rocket-base3.jpg)
 
 
 Explosion view of the rocket base:
@@ -125,9 +125,9 @@ Explosion view of the rocket base:
 here is the trigger system:
 from the top
 from the button
-![rocket](photos & animations/trigger1.jpg)
-![rocket](photos & animations/CAD2.png)
-![rocket](photos & animations/CAD3.png)
+![rocket](photos_animations/trigger1.jpg)
+![rocket](photos_animations/CAD2.png)
+![rocket](photos_animations/CAD3.png)
 
 <a name="parachute-system"></a>
 ## 7. parachute system
@@ -138,7 +138,7 @@ In the top i use a piece of a second plastic bottle as jumping spring. The parac
 
 here are some photos and animations:
 
-![parachute](photos & animations/rocket_parachute1_slow.gif)
+![parachute](photos_animations/rocket_parachute1_slow.gif)
 
 
 <a name="rocketscience-future"></a>
