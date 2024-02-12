@@ -130,7 +130,7 @@ from the button
 <a name="parachute-system"></a>
 ## 7. parachute system
 the parachute is made from a plastic film.
-Is important that the parachute is not much compact in the top. The parachute cord have to be oranisized in the top.
+Is important that the parachute is not much compact in the top. The parachute cord have to be oranisized in the top.  
 
 In the top i use a piece of a second plastic bottle as jumping spring. The parachute pressed against the spring. The great door pressed against the parachute. The cord from the top holding the door and can be triggered from the servo.
 
