@@ -1,22 +1,17 @@
 const { Client } = require('discord.js');
 
 const client = new Client();
-const githubRepo = 'https://github.com/fabse-hack/water.rocket';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', async message => {
-  if (message.content === '!watchCommits') { 
-    message.channel.send('Ich werde jetzt Commits überwachen.');
+client.login(process.env.BOT_KEY); // Verwende das Environment-Variable BOT_KEY
 
-    const channel = client.channels.cache.find(ch => ch.name === 'rocketscience');
+// Hier kannst du deine Bot-Logik hinzufügen
 
-    setInterval(() => {
-      channel.send(`Es wurde ein neuer Commit in ${githubRepo} gemacht!`);
-    }, 60000);
+client.on('message', message => {
+  if (message.content === '!ping') {
+    message.channel.send('Pong!');
   }
 });
-
-client.login('process.env.BOT_KEY);
