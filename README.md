@@ -57,7 +57,7 @@ Part list:
 - bottle base button
 - 4x big fins  
 
-Explosion view of the rocket:
+Explosion view of the rocket:  
 
 so, the empty weight is 336 gramm (with flight-controller and 18650 battery)
 
