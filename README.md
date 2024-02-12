@@ -55,7 +55,7 @@ Part list:
 - bottle base top
 - empty water bottle (hard plasatic PET)
 - bottle base button
-- 4x big fins
+- 4x big fins  
 
 Explosion view of the rocket:
 
