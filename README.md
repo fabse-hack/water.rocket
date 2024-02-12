@@ -40,7 +40,7 @@ The Water.Rocket is a 3D printed project. You will need:
 > **All together WITHOUT 3D printing, arround 40 $**
 
 This the mp-remote commands for the NodeMCU board:  
-- this windows console command upload the main.py to the micropython board over com6  
+- this windows console command upload the main.py to the micropython board over com6
 `python.exe -m mpremote connect com6 cp main.py :`  
 - this windows console command connects to the python prompt over com6  
 `python.exe -m mpremote connect com6`  
