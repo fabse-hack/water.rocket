@@ -1,5 +1,5 @@
 # Neptune 1 - is a Water.Rocket 3D printed and written in Micropython  
-## -> uses inovated water fuel for eco-friendly space boosts
+## -> uses inovated water fuel for eco-friendly space boosts  
 ## Requirements specification:
 - [Neptune 1 - is a Water.Rocket 3D printed and written in Micropython](#neptune-1---is-a-waterrocket-3d-printed-and-written-in-micropython)  
    uses inovated water fuel for eco-friendly space boosts
