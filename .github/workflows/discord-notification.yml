@@ -22,7 +22,7 @@ jobs:
         run: pip install discord.py==1.7.3
 
       - name: Send Discord notification
-        run: python ./send_discord_message.py
+        run: python .github/workflows/send_discord_message.py
         env:
           DISCORD_TOKEN: ${{ secrets.BOT_KEY }}
 
