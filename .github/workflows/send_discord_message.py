@@ -10,7 +10,6 @@ async def send_discord_message(message_content):
 
     target_channel_id = '1145979711097426001'
 
-
     client = discord.Client()
 
     @client.event
@@ -26,14 +25,11 @@ async def send_discord_message(message_content):
 
         await client.close()
 
-    await send_discord_message(message_content)
-    client.run(token)
-
+    await client.start(token)  # Starte den Client hier
 
 async def main():
     message_content = "Dies ist eine Testnachricht von GitHub Actions!"
     await send_discord_message(message_content)
     
 asyncio.run(main())
-
 
