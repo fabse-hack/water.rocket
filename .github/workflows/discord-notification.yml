@@ -19,52 +19,10 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: |
-          pip install discord.py==1.7.3
+        run: pip install discord.py==1.7.3
 
       - name: Send Discord notification
-        run: |
-          python -c '
-          import discord
-          import os
-          
-          async def send_discord_message(message_content):
-              # Token des Discord-Bots aus den Umgebungsvariablen laden
-              token = os.environ.get("BOT_KEY")
-              if not token:
-                  print("Error: Discord token not found.")
-                  return
-          
-              # Discord-Client initialisieren
-              client = discord.Client()
-          
-              @client.event
-              async def on_ready():
-                  print(f"We have logged in as {client.user}")
-          
-                  channel = None
-                  for guild in client.guilds:
-                      for c in guild.channels:
-                          if isinstance(c, discord.TextChannel):
-                              channel = c
-                              break
-                      if channel:
-                          break
-          
-                  # Nachricht senden
-                  if channel:
-                      await channel.send(message_content)
-                      print("Message sent successfully.")
-                  else:
-                      print("Error: No text channels found in any guilds.")
-          
-                  await client.close()
-          
-              # Beispielaufruf des Skripts mit einer Nachricht
-              message_content = "Dies ist eine Testnachricht von GitHub Actions!"
-              await send_discord_message(message_content)
-          
-          await send_discord_message(message_content)
-          '
-                  env:
-                    DISCORD_TOKEN: ${{ secrets.BOT_KEY }}
+        run: python send_discord_message.py
+        env:
+          DISCORD_TOKEN: ${{ secrets.BOT_KEY }}
+
