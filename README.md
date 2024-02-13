@@ -128,7 +128,7 @@ from the button
 ![rocket](photos_animations/CAD3.png)
 
 <a name="parachute-system"></a>
-## 7. parachute system
+## 7. parachute system  
 the parachute is made from a plastic film.
 Is important that the parachute is not much compact in the top. The parachute cord have to be oranisized in the top.  
 
