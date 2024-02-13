@@ -1,5 +1,6 @@
 import discord
 import os
+import asyncio
 
 async def send_discord_message(message_content):
     token = os.environ.get("BOT_KEY")
@@ -28,6 +29,11 @@ async def send_discord_message(message_content):
     await send_discord_message(message_content)
     client.run(token)
 
-message_content = "Dies ist eine Testnachricht von GitHub Actions!"
-send_discord_message(message_content)
+
+async def main():
+    message_content = "Dies ist eine Testnachricht von GitHub Actions!"
+    await send_discord_message(message_content)
+    
+asyncio.run(main())
+
 
