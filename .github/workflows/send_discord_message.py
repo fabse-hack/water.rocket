@@ -1,6 +1,7 @@
 import discord
 import os
 
+
 async def send_discord_message(message_content):
     # Token des Discord-Bots aus den Umgebungsvariablen laden
     token = os.environ.get("BOT_KEY")
@@ -34,6 +35,6 @@ async def send_discord_message(message_content):
     message_content = "Dies ist eine Testnachricht von GitHub Actions!"
     await send_discord_message(message_content)
 
-# Den Discord-Client starten
-client.run(token)
+    # Den Discord-Client starten
+    client.run(token)
 
