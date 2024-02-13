@@ -3,7 +3,7 @@ import os
 import asyncio
 
 async def send_discord_message(message_content):
-    token = os.environ.get("BOT_KEY")
+    token = os.environ.get("DISCORD_TOKEN")
     if not token:
         print("Fehler: Discord-Token nicht gefunden.")
         return
