@@ -29,5 +29,5 @@ async def send_discord_message(message_content):
     client.run(token)
 
 message_content = "Dies ist eine Testnachricht von GitHub Actions!"
-await send_discord_message(message_content)
+send_discord_message(message_content)
 
