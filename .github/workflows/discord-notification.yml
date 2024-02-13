@@ -1,44 +1,71 @@
-name: Discord Notification
+name: Discord Notification on Commit
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  discord-notification:
+  notify:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          node-version: '16'
+          python-version: '3.x'
 
-      - name: Install Dependencies
-        run: npm install discord.js
-
-      - name: Run Discord Notification Script
+      - name: Install dependencies
         run: |
-          node -e "const { Client } = require('discord.js');
-          const client = new Client();
+          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+
+      - name: Send Discord notification
+        run: |
+          python -c '
+          import discord
+          import os
           
-          client.once('ready', () => {
-              console.log('Bot is ready!');
-          });
+          async def send_discord_message(message_content):
+              # Token des Discord-Bots aus den Umgebungsvariablen laden
+              token = os.environ.get("BOT_KEY")
+              if not token:
+                  print("Error: Discord token not found.")
+                  return
           
-          client.login(process.env.BOT_KEY);
+              # Discord-Client initialisieren
+              client = discord.Client()
           
-          client.on('message', async message => {
-              if (message.content === '!watchCommits') {
-                  message.channel.send('Ich werde jetzt Commits überwachen.');
-              }
-          });
+              @client.event
+              async def on_ready():
+                  print(f"We have logged in as {client.user}")
           
-          client.on('commit', async (commit) => {
-              const channel = client.channels.cache.find(ch => ch.name === 'rocketscience');
-              channel.send(`Es wurde ein neuer Commit gemacht`);
-          });"
-        env:
-          BOT_KEY: ${{ secrets.BOT_KEY }}
+                  channel = None
+                  for guild in client.guilds:
+                      for c in guild.channels:
+                          if isinstance(c, discord.TextChannel):
+                              channel = c
+                              break
+                      if channel:
+                          break
+          
+                  # Nachricht senden
+                  if channel:
+                      await channel.send(message_content)
+                      print("Message sent successfully.")
+                  else:
+                      print("Error: No text channels found in any guilds.")
+          
+                  await client.close()
+          
+              # Beispielaufruf des Skripts mit einer Nachricht
+              message_content = "Dies ist eine Testnachricht von GitHub Actions!"
+              await send_discord_message(message_content)
+          
+          await send_discord_message(message_content)
+          '
+                  env:
+                    DISCORD_TOKEN: ${{ secrets.BOT_KEY }}
