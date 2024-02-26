@@ -12,9 +12,7 @@ async def send_discord_message(message_content):
     async def on_ready():
 
         channel = client.get_channel(int(target_channel_id))
-        channel:
-          await channel.send(message_content)
-
+        await channel.send(message_content)
         await client.close()
 
     await client.start(token)
