@@ -1,5 +1,5 @@
-# Neptune 1 - is a Water.Rocket 3D printed and written in Micropython  
-## -> uses inovated water fuel for eco-friendly space boosts  
+# Neptune 1 - is a Water.Rocket 3D printed and programmed in Micropython  
+## -> Utilizing innovative water fuel for eco-friendly space propulsion  
 ## Requirements specification:
 - [Neptune 1 - is a Water.Rocket 3D printed and written in Micropython](#neptune-1---is-a-waterrocket-3d-printed-and-written-in-micropython)  
    uses inovated water fuel for eco-friendly space boosts
@@ -24,7 +24,7 @@ The Water.Rocket is a 3D printed project. You will need:
 - empty Water Bottle (small)
 - empty Water Bottle (hard plastic)
 - some sealing rings
-- car ventil
+- car valve
 - some screws
 - Wood (for the Rocket Base)
 - NodeMCU
@@ -34,13 +34,13 @@ The Water.Rocket is a 3D printed project. You will need:
 - servo
 - wrapping wire
 - plastic foil
-- Cord
+- cord
 - superglue
 - cable ties  
 > **All together WITHOUT 3D printing, arround 40 $**
 
 This the mp-remote commands for the NodeMCU board:  
-- this windows console command upload the main.py to the micropython board over com6
+- this windows console command uploads the main.py to the micropython board over com6  
 `python.exe -m mpremote connect com6 cp main.py :`  
 - this windows console command connects to the python prompt over com6  
 `python.exe -m mpremote connect com6`  
@@ -59,7 +59,7 @@ Part list:
 
 Explosion view of the rocket:  
 
-so, the empty weight is 336 gramm (with flight-controller and 18650 battery)
+so, the empty weight is 336 gramm (with flight-controller and 18650 battery)  
 
 <a name="flight-controller"></a>
 ## 3. flight controller
@@ -88,17 +88,17 @@ Here are some photos from the finished controller:
 <a name="software-flight-control"></a>
 ## 4. software from flight controller
 
-I coded the software in micropython. Main-programm is short (arround 20 lines), standard libraries for the neopixel and the adxl345.
-The main function is the trigger for the parachute, when the ADXL345 is 0G, then the value go to arround -10. So i code the process, that at value 0 the servo go from 0° to 180°. The servo opens the door of the great and release the parachute over a spring mechanismus.
-Here is the LINK to the code.
+The software is written in MicroPython. The main program is short (around 20 lines) with standard libraries for the neopixel and the ADXL345.  
+The main function triggers the parachute when the ADXL345 detects 0G, which corresponds to a value of around -10.  
+When the value reaches 0, the servo moves from 0° to 180°, opening the door of the Great and releasing the parachute via a spring mechanism.  
 
 ![rocket](photos_animations/data-analyse1.png)
 
 <a name="rocket-base"></a>
 ## 5. rocket.base
-the rocket base is mixxed build from wood and 3d printing parts.
-For put the pressed air in the bottle, i use a bicycle wheel value and some sealing rings.
-The trigger is build from 3D printed, wrapping wiring and cable ties.
+The rocket base is a mixed construction of wood and 3D printed parts.  
+To pressurize the air in the bottle, a bicycle wheel valve and some sealing rings are used.  
+The trigger is constructed from 3D printed parts, wrapping wire, and cable ties.  
 Parts:
 - 4x support
 - trigger ring on the top
@@ -129,12 +129,14 @@ from the button
 
 <a name="parachute-system"></a>
 ## 7. parachute system  
-the parachute is made from a plastic film.
-Is important that the parachute is not much compact in the top. The parachute cord have to be oranisized in the top.  
+The parachute is made from a plastic film.  
+It's important that the parachute is not tightly packed at the top. The parachute cord should be organized at the top.  
 
-In the top i use a piece of a second plastic bottle as jumping spring. The parachute pressed against the spring. The great door pressed against the parachute. The cord from the top holding the door and can be triggered from the servo.
+At the top, a piece of a second plastic bottle is used as a jumping spring.  
+The parachute is pressed against the spring, and the Great door is pressed against the parachute.  
+The cord from the top holds the door and can be triggered by the servo.  
 
-here are some photos and animations:
+here are some photos and animations:  
 
 ![parachute](photos_animations/rocket_parachute1_slow.gif)
 
