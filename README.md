@@ -2,20 +2,20 @@
 3D print:
   - [x] 3D printed Body 
   - [x] 3D printed Fins
-  - [x] 3D printed Rocket tip
+  - [x] 3D printed Rocket tip  
 Parachute:
   - [x] Parachute spring
   - [ ] Parachute door
-  - [ ] Parachute trigger
+  - [ ] Parachute trigger  
 Improves:
   - [ ] improve Flight Controller Software
   - [ ] improve rocket base (plastic)
   - [ ] imporve Air tube + valve revise
-  - [ ] improve nozzle
+  - [ ] improve nozzle  
 CAD:  
    - [ ] add CAD files to the github repo
    - [ ] CAD building plan
-   - [ ] CAD explosion view
+   - [ ] CAD explosion view  
 Testing:
   - [ ] first test flight
 
