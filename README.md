@@ -1,4 +1,24 @@
 # Neptune 1 - is a Water.Rocket 3D printed and programmed in Micropython  
+3D print:
+  - [x] 3D printed Body 
+  - [x] 3D printed Fins
+  - [x] 3D printed Rocket tip
+Parachute:
+  - [x] Parachute spring
+  - [ ] Parachute door
+  - [ ] Parachute trigger
+Improves:
+  - [ ] improve Flight Controller Software
+  - [ ] improve rocket base (plastic)
+  - [ ] imporve Air tube + valve revise
+  - [ ] improve nozzle
+CAD:  
+   - [ ] add CAD files to the github repo
+   - [ ] CAD building plan
+   - [ ] CAD explosion view
+Testing:
+  - [ ] first test flight
+
 ## -> Utilizing innovative water fuel for eco-friendly space propulsion  
 ## Requirements specification:
 - [Neptune 1 - is a Water.Rocket 3D printed and written in Micropython](#neptune-1---is-a-waterrocket-3d-printed-and-written-in-micropython)  
