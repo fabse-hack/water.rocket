@@ -1,6 +1,6 @@
 from machine import Pin, I2C, PWM
 from time import sleep
-import ADXL345
+import micropython_testing.ADXL345 as ADXL345
 import machine
 import time
 import neopixel
